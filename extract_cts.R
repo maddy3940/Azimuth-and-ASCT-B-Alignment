@@ -1,7 +1,7 @@
 library(jsonlite)
 library(tidyverse)
 
-
+# get urls and other metadata from config file
 json <- jsonlite::fromJSON("./Data/config.json")
 urls<-json$references$url
 file_name<-json$references$file_name
@@ -11,6 +11,7 @@ organ_name<-json$references$name
 ct=1
 list_organ_var<-c()
 
+# Get Azimuth cell type data and names into a dataframe
 for (config in file_name){
   
   if (!file.exists(paste('./Data/Original/',file_name[ct],sep='')))
@@ -66,8 +67,7 @@ sid<-json$references$asctb_sid[1]
 gid<-json$references$asctb_gid
 
 
-#sid<-"1tK916JyG5ZSXW_cXfsyZnzXfjyoN-8B2GXLbYD6_vF0"
-#gid<-c("1824552484","1044871154","2137043090","1379088218","1845311048","1315753355","984946629")
+#Get ASCTB data via API call 
 library(rjson)
 list_organ_var<-c("lung","pancreas","kidney","brain","bone_marrow","blood_pmbc","spleen")
 val=1
