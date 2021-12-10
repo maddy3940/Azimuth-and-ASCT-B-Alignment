@@ -1,11 +1,11 @@
 library(dplyr)
-
+# Get metadata from config file
 json <- jsonlite::fromJSON("./Data/config.json")
 organ_name<-json$references$name
 
 aligned_path<-'./Data/Aligned Data/'
 
-
+# Get set difference between cell types of ASCTB and Azimuth and compute the count of missing CTs and write all the results into csv files
 if (!file.exists(paste(aligned_path,'lung_aligned.csv',sep='')))
 {
     for (organ in organ_name){
