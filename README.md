@@ -56,5 +56,6 @@ bash upload.sh
   h) We store the count of missing IDs and Names in [summary.csv](https://github.com/maddy3940/Azimuth-and-ASCT-B-Alignment/blob/master/Data/Aligned%20Data/summary.csv) file.
 
 
-
+### Deployment
+All result CSV files can be seen [here](https://github.com/maddy3940/Azimuth-and-ASCT-B-Alignment/tree/master/Data/Aligned%20Data)
 
