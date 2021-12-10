@@ -38,6 +38,7 @@ bash upload.sh
 3) The purpose of this repositorry is to get the cell type from these two data sets. More specifically each missing cell type with the cell ontology ID that is present in ASCT+B master tables but not in the Azimuth reference and a summary file representing the count of missing cell types present in ASCT+B but not in Azimuth for each organ.
 4)  `extract_and_summarize.R` contains the main R script which calls other two scripts.
 5) The working is as follows-
+  
   a) The script `extract_cts.R` will fetch in the data from the two data sources. The urls and organ name information is present in another json file - `config.json`. 
   
   b) We are only concerned with the Cell type and ontology ID column. So we use grepl command in R to extract only those column names that has `ID` somewhere in the column name    or of type  `AS/1`. (As per my understanding the number present in the column is the hierarchy level of that Cell type)
