@@ -6,18 +6,19 @@ This repository contains an R script and bash script to reproduce the results of
 
 ### Steps to reproduce the results
 
-1) Fork the [master repository](https://github.com/maddy3940/Azimuth-and-ASCT-B-Alignment)
+1) Fork the [master branch](https://github.com/maddy3940/Azimuth-and-ASCT-B-Alignment)
 2) Clone your forked repository
 3) If you do not have R install it first. You may follow this [tutorial](https://www.datacamp.com/community/tutorials/installing-R-windows-mac-ubuntu)
 4) Find the R installation and add the path to your environment to access R from the command line ([Reference](https://helpdeskgeek.com/windows-10/add-windows-path-environment-variable/)
-5) Copy the HTTPS link of the forked repository. 
+5) Copy the SSH link of the forked repository. 
 
-![1](https://user-images.githubusercontent.com/44323045/145530823-174a6541-af88-4e01-abc8-c9e532d76d07.JPG)
+![1](https://user-images.githubusercontent.com/44323045/145687023-15edb940-7054-4def-b74d-b82bc793abac.JPG)
+
 
 Add a new git origin using the following command
 
 ```
-git remote set-URL origin git@github.com/maddy3940/Azimuth-and-ASCT-B-Alignment.git
+git remote add origin git@github.com/maddy3940/Azimuth-and-ASCT-B-Alignment.git
 ```
 
 6) Run the script upload.sh 
@@ -58,4 +59,5 @@ bash upload.sh
 
 ### Deployment
 All result CSV files can be seen [here](https://github.com/maddy3940/Azimuth-and-ASCT-B-Alignment/tree/master/Data/Aligned%20Data)
+
 
